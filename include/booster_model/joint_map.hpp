@@ -2,7 +2,7 @@
 
 #include <array>
 #include <string_view>
-
+#include <unordered_map>
 #include "booster_model/joint.hpp"
 
 namespace booster_model::Joint
@@ -31,6 +31,31 @@ inline constexpr std::array<JointIndex, kJointCnt> kAllJoints = {
   JointIndex::kRightKneePitch,
   JointIndex::kCrankUpRight,
   JointIndex::kCrankDownRight,
+};
+
+inline const std::unordered_map<JointIndex, std::string_view> kJointNames = {
+    {JointIndex::kHeadYaw,            "HeadYaw"},
+    {JointIndex::kHeadPitch,          "HeadPitch"},
+    {JointIndex::kLeftShoulderPitch,  "LeftShoulderPitch"},
+    {JointIndex::kLeftShoulderRoll,   "LeftShoulderRoll"},
+    {JointIndex::kLeftElbowPitch,     "LeftElbowPitch"},
+    {JointIndex::kLeftElbowYaw,       "LeftElbowYaw"},
+    {JointIndex::kRightShoulderPitch, "RightShoulderPitch"},
+    {JointIndex::kRightShoulderRoll,  "RightShoulderRoll"},
+    {JointIndex::kRightElbowPitch,    "RightElbowPitch"},
+    {JointIndex::kRightElbowYaw,      "RightElbowYaw"},
+    {JointIndex::kLeftHipPitch,       "LeftHipPitch"},
+    {JointIndex::kLeftHipRoll,        "LeftHipRoll"},
+    {JointIndex::kLeftHipYaw,         "LeftHipYaw"},
+    {JointIndex::kLeftKneePitch,      "LeftKneePitch"},
+    {JointIndex::kCrankUpLeft,        "CrankUpLeft"},
+    {JointIndex::kCrankDownLeft,      "CrankDownLeft"},
+    {JointIndex::kRightHipPitch,      "RightHipPitch"},
+    {JointIndex::kRightHipRoll,       "RightHipRoll"},
+    {JointIndex::kRightHipYaw,        "RightHipYaw"},
+    {JointIndex::kRightKneePitch,     "RightKneePitch"},
+    {JointIndex::kCrankUpRight,       "CrankUpRight"},
+    {JointIndex::kCrankDownRight,     "CrankDownRight"},
 };
 
 inline constexpr std::array<JointIndex, 8> kArmJoints = {
