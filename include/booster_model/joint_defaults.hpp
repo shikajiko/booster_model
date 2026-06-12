@@ -21,8 +21,8 @@ inline constexpr int kCommandFrequencyMs = static_cast<int>(kControlDt / 0.001F)
 
 inline constexpr std::array<double, kJointCnt> kDefaultJointKps = {
   40., 40.,
-  60., 70., 40., 40,
-  60., 70., 40., 40,
+  40., 50., 20., 20,
+  40., 50., 20., 20,
   350., 350., 180., 350., 250., 250.,
   350., 350., 180., 350., 250., 250.
 };
