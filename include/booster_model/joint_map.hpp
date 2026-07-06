@@ -8,6 +8,33 @@
 namespace booster_model::Joint
 {
 
+inline constexpr std::array<JointIndexWithGripper, kTotalJointCnt> kJointWithGripper = {
+  JointIndexWithGripper::kHeadYaw,
+  JointIndexWithGripper::kHeadPitch,
+  JointIndexWithGripper::kLeftShoulderPitch,
+  JointIndexWithGripper::kLeftShoulderRoll,
+  JointIndexWithGripper::kLeftElbowPitch,
+  JointIndexWithGripper::kLeftElbowYaw,
+  JointIndexWithGripper::kRightShoulderPitch,
+  JointIndexWithGripper::kRightShoulderRoll,
+  JointIndexWithGripper::kRightElbowPitch,
+  JointIndexWithGripper::kRightElbowYaw,
+  JointIndexWithGripper::kLeftHipPitch,
+  JointIndexWithGripper::kLeftHipRoll,
+  JointIndexWithGripper::kLeftHipYaw,
+  JointIndexWithGripper::kLeftKneePitch,
+  JointIndexWithGripper::kCrankUpLeft,
+  JointIndexWithGripper::kCrankDownLeft,
+  JointIndexWithGripper::kRightHipPitch,
+  JointIndexWithGripper::kRightHipRoll,
+  JointIndexWithGripper::kRightHipYaw,
+  JointIndexWithGripper::kRightKneePitch,
+  JointIndexWithGripper::kCrankUpRight,
+  JointIndexWithGripper::kCrankDownRight,
+  JointIndexWithGripper::kLeftGripper,
+  JointIndexWithGripper::kRightGripper,
+};
+
 inline constexpr std::array<JointIndex, kJointCnt> kAllJoints = {
   JointIndex::kHeadYaw,
   JointIndex::kHeadPitch,
@@ -56,6 +83,33 @@ inline const std::unordered_map<JointIndex, std::string_view> kJointNames = {
     {JointIndex::kRightKneePitch,     "RightKneePitch"},
     {JointIndex::kCrankUpRight,       "CrankUpRight"},
     {JointIndex::kCrankDownRight,     "CrankDownRight"},
+};
+
+inline const std::unordered_map<JointIndexWithGripper, std::string_view> kJointNamesGripper = {
+    {JointIndexWithGripper::kHeadYaw,            "HeadYaw"},
+    {JointIndexWithGripper::kHeadPitch,          "HeadPitch"},
+    {JointIndexWithGripper::kLeftShoulderPitch,  "LeftShoulderPitch"},
+    {JointIndexWithGripper::kLeftShoulderRoll,   "LeftShoulderRoll"},
+    {JointIndexWithGripper::kLeftElbowPitch,     "LeftElbowPitch"},
+    {JointIndexWithGripper::kLeftElbowYaw,       "LeftElbowYaw"},
+    {JointIndexWithGripper::kRightShoulderPitch, "RightShoulderPitch"},
+    {JointIndexWithGripper::kRightShoulderRoll,  "RightShoulderRoll"},
+    {JointIndexWithGripper::kRightElbowPitch,    "RightElbowPitch"},
+    {JointIndexWithGripper::kRightElbowYaw,      "RightElbowYaw"},
+    {JointIndexWithGripper::kLeftHipPitch,       "LeftHipPitch"},
+    {JointIndexWithGripper::kLeftHipRoll,        "LeftHipRoll"},
+    {JointIndexWithGripper::kLeftHipYaw,         "LeftHipYaw"},
+    {JointIndexWithGripper::kLeftKneePitch,      "LeftKneePitch"},
+    {JointIndexWithGripper::kCrankUpLeft,        "CrankUpLeft"},
+    {JointIndexWithGripper::kCrankDownLeft,      "CrankDownLeft"},
+    {JointIndexWithGripper::kRightHipPitch,      "RightHipPitch"},
+    {JointIndexWithGripper::kRightHipRoll,       "RightHipRoll"},
+    {JointIndexWithGripper::kRightHipYaw,        "RightHipYaw"},
+    {JointIndexWithGripper::kRightKneePitch,     "RightKneePitch"},
+    {JointIndexWithGripper::kCrankUpRight,       "CrankUpRight"},
+    {JointIndexWithGripper::kCrankDownRight,     "CrankDownRight"},
+    {JointIndexWithGripper::kLeftGripper,        "LeftGripper"},
+    {JointIndexWithGripper::kRightGripper,       "RightGripper"},
 };
 
 inline constexpr std::array<JointIndex, 8> kArmJoints = {

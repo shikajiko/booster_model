@@ -1,3 +1,5 @@
+#pragma once
+
 namespace booster_model::mode
 {
 
