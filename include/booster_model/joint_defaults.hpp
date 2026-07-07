@@ -9,7 +9,7 @@ namespace booster_model::Joint
 
 inline constexpr double kDefaultJointDq = 0.0F;
 inline constexpr double kDefaultJointTau = 0.0F;
-inline constexpr double kDefaultJointWeight = 0.0F;
+inline constexpr double kDefaultJointWeight = 1.0F;
 inline constexpr double kControlDt = 0.02F;
 inline constexpr double kJointWeightRate = 0.2F;
 inline constexpr double kBaseJointVelocity = 0.1F;  // rad/s
